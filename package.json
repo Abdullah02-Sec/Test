@@ -1,7 +1,7 @@
 {
     "name": "my-node-app",
     "version": "1.0.0",
-    "main": "file1.js",
+    "main": "index.js",
     "dependencies": {
       "express": "4.18.1"
     }
