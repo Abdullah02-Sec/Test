@@ -1,9 +1,11 @@
 {
-    "name": "My_first_App",
-    "version": "1.0.0",
-    "main": "index.js",
-    "test": "Abdullah",
-    "dependencies": {
-      "express": "4.18.1"
-    }
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node file1.js",
+    "test": "echo \"No tests yet!\" && exit 0"
+  },
+  "dependencies": {
+    "express": "4.18.1"
   }
+}
