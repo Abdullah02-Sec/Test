@@ -1,8 +1,7 @@
 {
   "name": "your-project-name",
   "version": "1.0.0",
-  "scripts": {
-    "start": "node index.js",  
+  "scripts": {  
     "main": "node app.js"        
   },
   "dependencies": {
