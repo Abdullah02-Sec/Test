@@ -2,10 +2,10 @@
   "name": "your-project-name",
   "version": "1.0.0",
   "scripts": {
-    "start": "node index.js",    // Default start script
-    "main": "node app.js"        // Example of a custom 'main' script
+    "start": "node index.js",  
+    "main": "node app.js"        
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "4.18.1"
   }
 }
