@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   build:
@@ -20,9 +17,20 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16'
+          
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: node app.js
+
+      - name: Deploy to Server
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} << 'EOF'
+            cd /root/abdullah  # Navigate to the deployment directory on the server
+            git pull origin main  # Pull the latest code
+            npm install  # Or any other install step (e.g., yarn install, pip install)
+            npm run build  # Or any other build step if necessary
