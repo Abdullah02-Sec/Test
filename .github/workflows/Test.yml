@@ -30,7 +30,7 @@ jobs:
       - name: Deploy to Server
         run: |
           ssh -o StrictHostKeyChecking=no root@168.119.254.41 << 'EOF'
-            cd /root/abdullah  # Navigate to the deployment directory on the server
+            cd ~/abdullah/
             git pull origin main  # Pull the latest code
             npm install  # Or any other install step (e.g., yarn install, pip install)
             npm run build  # Or any other build step if necessary
