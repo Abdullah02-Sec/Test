@@ -1,10 +1,10 @@
 {
-  "name": "app.js",
-  "dependencies": {
-    "express": "^10.8.2"
+  "name": "My_first_project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node app.js"
   },
-  "scripts": {  
-  "start": "node app.js",        
+  "dependencies": {
+    "express": "^4.17.1"
   }
-  
 }
