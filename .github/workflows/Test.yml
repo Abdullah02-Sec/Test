@@ -30,9 +30,7 @@ jobs:
       - name: Deploy to Server
         run: |
           ssh -o StrictHostKeyChecking=no root@168.119.254.41 << 'EOF'
-              # Your commands here
-              git clone https://github.com/Abdullah02-Sec/Test.git
-              cd ~/abdullah/
+              cd ~/abdullah
               npm install
               npm start
               EOF
