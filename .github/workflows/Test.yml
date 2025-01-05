@@ -30,8 +30,9 @@ jobs:
       - name: Deploy to Server
         run: |
           ssh -o StrictHostKeyChecking=no root@168.119.254.41 << 'EOF'
-            cd ~/abdullah/
-            git pull origin main  # Pull the latest code
-            npm install  # Or any other install step (e.g., yarn install, pip install)
-            npm run build  # Or any other build step if necessary
-            EOF
+              # Your commands here
+              git clone 
+              cd ~/abdullah/
+              npm install
+              npm start
+              EOF
