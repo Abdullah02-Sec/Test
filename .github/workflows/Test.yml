@@ -30,7 +30,7 @@ jobs:
       - name: Deploy to Server
         run: |
               ssh -T -o StrictHostKeyChecking=no root@168.119.254.41 << 'EOF'
-              cd /path/to/abdullah/Test
+              cd ~/abdullah/Test
               npm install
               npm start &
               EOF
