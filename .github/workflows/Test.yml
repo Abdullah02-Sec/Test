@@ -33,5 +33,5 @@ jobs:
               cd ~/abdullah/Test
               git pull origin main
               npm install
-              nohup npm start &
+              nohup npm start &> output.log &
               EOF
