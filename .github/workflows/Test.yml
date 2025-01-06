@@ -33,5 +33,5 @@ jobs:
               cd abdullah
               cd Test
               npm install
-              nohup npm start &
+              npm start &
               EOF
