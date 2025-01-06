@@ -30,7 +30,8 @@ jobs:
       - name: Deploy to Server
         run: |
           ssh  -T -o StrictHostKeyChecking=no root@168.119.254.41 << 'EOF'
-              cd ~/abdullah/Test
+              cd abdullah
+              cd Test
               npm install
               nohup npm start &
               EOF
