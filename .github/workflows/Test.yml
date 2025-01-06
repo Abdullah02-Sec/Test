@@ -32,5 +32,4 @@ jobs:
           ssh -o StrictHostKeyChecking=no root@168.119.254.41 << 'EOF'
               cd ~/abdullah/Test
               npm install
-              npm start
               EOF
