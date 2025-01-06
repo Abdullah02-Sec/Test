@@ -29,9 +29,8 @@ jobs:
 
       - name: Deploy to Server
         run: |
-          ssh  -T -o StrictHostKeyChecking=no root@168.119.254.41 << 'EOF'
-              cd abdullah
-              cd Test
+              ssh -T -o StrictHostKeyChecking=no root@168.119.254.41 << 'EOF'
+              cd /path/to/abdullah/Test
               npm install
               npm start &
               EOF
